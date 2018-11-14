@@ -1,0 +1,6 @@
+<!--life.wxml-->
+<view class="container">
+  <view>
+    <text class="user-motto">Life</text>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+<!--show.wxml-->
+<view class="container">
+
+  <view>
+    <text  class="user-motto">Show</text>
+  </view>
+</view>
