@@ -3,4 +3,7 @@
   <view>
     <text class="user-motto">Life</text>
   </view>
+  <view wx:for="{{compulsory}}">
+  {{index}}: {{item.name}}
+</view>
 </view>
