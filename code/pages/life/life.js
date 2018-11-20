@@ -1,4 +1,4 @@
-var t = require("../../utils/util.js");
+var util = require("../../utils/util.js");
 var lifeprin = require("data").student();
 const app = getApp();
 Page({
@@ -6,7 +6,10 @@ Page({
     score: lifeprin.score,
     compulsory: lifeprin.course.compulsory,
     optional: lifeprin.course.optional,
-    challenge: lifeprin.course.challenge
+    challenge: lifeprin.course.challenge,
+    co_scoring: 0,
+    op_scoring: 0,
+    ch_scoring: 0
   },
   onLoad: function() {
     console.log("page-life onload");
@@ -21,7 +24,22 @@ Page({
   onUnload() {
     console.log("page-life onUnload");
   },
-  checkboxChange: function (e) {
-    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
-  }
+  checkboxChange4Compul: function(e) {
+    this.setData({
+      co_scoring: util.getSum(e.detail.value)
+    });
+  },
+  checkboxChange4Optional: function(e) {
+    this.setData({
+      op_scoring: util.getSum(e.detail.value)
+    });
+  },
+  checkboxChange4Challenge: function(e) {
+    this.setData({
+      ch_scoring: util.getSum(e.detail.value)
+    });
+  },
+  doSubmit: function() {
+    console.log("co_scoring : "+this.data.co_scoring);
+  },
 });

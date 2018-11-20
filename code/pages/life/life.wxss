@@ -1,7 +1,36 @@
-.free-all{
+.free-all {
   display: flex;
 }
-.free-all>view{
-    display: inline-block;
+
+.free-all>view {
+  display: inline-block;
 }
-.flex-wrp {display: flex;}
+
+.flex-wrp {
+  display: flex;
+}
+
+.submit-btn {
+  width: 40px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.submit-btn::after {
+  border: none;
+}
+
+.right-footer {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.right-footer button {
+    min-width: 60px;
+    padding: 0px;
+    height: 45px;
+    line-height: 45px;
+}

@@ -14,6 +14,15 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const getSum = arr => {
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum += parseInt(arr[i]);
+  }
+  return sum;
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  getSum: getSum
 }
