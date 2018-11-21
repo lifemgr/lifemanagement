@@ -1,77 +1,92 @@
 <!--life.wxml-->
 <view>
-  <view class="first-title">
-  </view>
-  <view class="cls_courses">
-    <view class="cls_container">
-      <view class="title">
-        <text class="user-motto">Bi Xiu Ke</text>
-      </view>
-      <checkbox-group bindchange="checkboxChange4Compul" style="float:none;width:100%;flex-direction:column;zoom:1;overflow:hidden;">
-        <view wx:for="{{compulsory.course}}" style="float:left;background:#eeeeee;width:33%;text-align:center;margin-bottom:10px">
-          <view>
+  <view wx:if="{{show}}">
+    <view class="first-title">
+    </view>
+    <view class="cls_courses">
+      <view class="cls_container">
+        <view class="title">
+          <text class="user-motto">Bi Xiu Ke</text>
+        </view>
+        <checkbox-group bindchange="checkboxChange4Compul" style="float:none;width:100%;flex-direction:column;zoom:1;overflow:hidden;">
+          <view wx:for="{{compulsory.course}}" style="float:left;background:#eeeeee;width:33%;text-align:center;margin-bottom:10px">
             <view>
-              <label for="{{item.name}}">
-                <image style="width: 100px; height: 100px; background-color: #eeeeee;" src="{{item.image}} "></image>
-              </label>
-            </view>
-            <view>
-              <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
-              <label for="{{item.name}}">
-                <text>{{item.name}}</text>
-              </label>
+              <view>
+                <label for="{{item.name}}">
+                  <image style="width: 100px; height: 100px; background-color: #eeeeee;" src="{{item.image}} "></image>
+                </label>
+              </view>
+              <view>
+                <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
+                <label for="{{item.name}}">
+                  <text>{{item.name}}</text>
+                </label>
+              </view>
             </view>
           </view>
+        </checkbox-group>
+      </view>
+
+      <view class="cls_container">
+        <view class="title">
+          <text class="user-motto">Xuan xiu Ke</text>
         </view>
-      </checkbox-group>
+        <checkbox-group bindchange="checkboxChange4Optional" style="float:none;width:100%;flex-direction:column;zoom:1;overflow:hidden;">
+          <view wx:for="{{optional.course}}" style="float:left;background:#eeeeee;width:33%;text-align:center;margin-bottom:10px">
+            <view>
+              <view>
+                <label for="{{item.name}}">
+                  <image style="width: 100px; height: 100px; background-color: #eeeeee;" src="{{item.image}} "></image>
+                </label>
+              </view>
+              <view>
+                <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
+                <label for="{{item.name}}">
+                  <text>{{item.name}}</text>
+                </label>
+              </view>
+            </view>
+          </view>
+        </checkbox-group>
+      </view>
+      <view class="cls_container">
+        <view class="title">
+          <text class="user-motto">Tiao Zhan ke</text>
+        </view>
+        <checkbox-group bindchange="checkboxChange4Challenge" style="float:none;width:100%;flex-direction:column;zoom:1;overflow:hidden;">
+          <view wx:for="{{challenge.course}}" style="float:left;background:#eeeeee;width:33%;text-align:center;margin-bottom:10px">
+            <view>
+              <view>
+                <label for="{{item.name}}">
+                  <image style="width: 100px; height: 100px; background-color: #eeeeee;" src="{{item.image}} "></image>
+                </label>
+              </view>
+              <view>
+                <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
+                <label for="{{item.name}}">
+                  <text>{{item.name}}</text>
+                </label>
+              </view>
+            </view>
+          </view>
+        </checkbox-group>
+      </view>
+    </view>
+    <view class="right-footer">
+      <button bindgetuserinfo="doSubmit" class="submit-btn" openType="getUserInfo" type="primary">提 交</button>
     </view>
 
-    <view class="cls_container">
-      <view class="title">
-        <text class="user-motto">Xuan xiu Ke</text>
-      </view>
-      <checkbox-group bindchange="checkboxChange4Optional" style="float:none;width:100%;flex-direction:column;zoom:1;overflow:hidden;">
-        <view wx:for="{{optional.course}}" style="float:left;background:#eeeeee;width:33%;text-align:center;margin-bottom:10px">
-          <view>
-            <view>
-              <label for="{{item.name}}">
-                <image style="width: 100px; height: 100px; background-color: #eeeeee;" src="{{item.image}} "></image>
-              </label>
-            </view>
-            <view>
-              <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
-              <label for="{{item.name}}">
-                <text>{{item.name}}</text>
-              </label>
-            </view>
-          </view>
-        </view>
-      </checkbox-group>
-    </view>
-    <view class="cls_container">
-      <view class="title">
-        <text class="user-motto">Tiao Zhan ke</text>
-      </view>
-      <checkbox-group bindchange="checkboxChange4Challenge" style="float:none;width:100%;flex-direction:column;zoom:1;overflow:hidden;">
-        <view wx:for="{{challenge.course}}" style="float:left;background:#eeeeee;width:33%;text-align:center;margin-bottom:10px">
-          <view>
-            <view>
-              <label for="{{item.name}}">
-                <image style="width: 100px; height: 100px; background-color: #eeeeee;" src="{{item.image}} "></image>
-              </label>
-            </view>
-            <view>
-              <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
-              <label for="{{item.name}}">
-                <text>{{item.name}}</text>
-              </label>
-            </view>
-          </view>
-        </view>
-      </checkbox-group>
-    </view>
   </view>
-  <view class="right-footer">
-  <button bindgetuserinfo="doSubmit" class="submit-btn" openType="getUserInfo" type="primary">提 交</button>
+  <view wx:else>
+    <button bindtap="saveImg" class="save-img right-footer">
+      <image class="btn-img" mode="aspectFit" src="../../imgs/friend.png"></image>
+      生成图片分享好友
+    </button>
+        <button bindtap="doCancel" class="save-img right-footer">
+      <image class="btn-img" mode="aspectFit" src="../../imgs/refresh.png"></image>
+      重选
+    </button>
   </view>
+  <canvas canvasId="shareCanvas" class="drawer_content_canvas {{hiddenCanvas?'hidden-view':''}}" wx:if="{{iphone}}"></canvas>
+  <canvas canvasId="shareCanvas" class="drawer_content_canvas" wx:else></canvas>
 </view>

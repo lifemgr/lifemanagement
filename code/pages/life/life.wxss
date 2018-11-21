@@ -34,3 +34,7 @@
     height: 45px;
     line-height: 45px;
 }
+.btn-img {
+    width: 40px;
+    height: 40px;
+}
