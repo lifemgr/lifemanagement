@@ -78,15 +78,16 @@
 
   </view>
   <view wx:else>
-    <button bindtap="saveImg" class="save-img right-footer">
+    <image mode='scaleToFill' src='{{imagePath}}' style='width:{{screenWidth}}px;height:{{screenHeight}}px;'></image>
+    <button bindtap="saveImg" class="save-img right-footer f2">
       <image class="btn-img" mode="aspectFit" src="../../imgs/friend.png"></image>
-      生成图片分享好友
     </button>
-        <button bindtap="doCancel" class="save-img right-footer">
+    <button bindtap="doCancel" class="save-img right-footer f1">
       <image class="btn-img" mode="aspectFit" src="../../imgs/refresh.png"></image>
-      重选
     </button>
   </view>
-  <canvas canvasId="shareCanvas" class="drawer_content_canvas {{hiddenCanvas?'hidden-view':''}}" wx:if="{{iphone}}"></canvas>
-  <canvas canvasId="shareCanvas" class="drawer_content_canvas" wx:else></canvas>
+  <view id="canvas_view" class="{{hiddenCanvas?'hidden-view':''}}">
+    <canvas canvasId="shareCanvas" class="drawer_content_canvas" wx:if="{{iphone}}"></canvas>
+    <canvas canvasId="shareCanvas" class="drawer_content_canvas" wx:else></canvas>
+  </view>
 </view>

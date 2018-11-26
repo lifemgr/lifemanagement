@@ -28,6 +28,18 @@
     right: 10px;
 }
 
+.f1 {
+    bottom: 10px;
+}
+
+.f2 {
+    bottom: 50px;
+}
+
+.f1 {
+    bottom: 100px;
+}
+
 .right-footer button {
     min-width: 60px;
     padding: 0px;
@@ -37,4 +49,11 @@
 .btn-img {
     width: 40px;
     height: 40px;
+}
+ .drawer_content_canvas {
+    width: 658px;
+    height: 1170px;
+} 
+.hidden-view {
+    display: none;
 }
