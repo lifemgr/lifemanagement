@@ -1,5 +1,5 @@
 <!--life.wxml-->
-<view>
+<view class="{{show?'main-container':''}}">
   <view wx:if="{{show}}">
     <view class="first-title">
     </view>
@@ -19,7 +19,7 @@
               <view>
                 <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
                 <label for="{{item.name}}">
-                  <text>{{item.name}}</text>
+                  <text class="item_text">{{item.name}}</text>
                 </label>
               </view>
             </view>
@@ -42,7 +42,7 @@
               <view>
                 <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
                 <label for="{{item.name}}">
-                  <text>{{item.name}}</text>
+                  <text class="item_text">{{item.name}}</text>
                 </label>
               </view>
             </view>
@@ -64,7 +64,7 @@
               <view>
                 <checkbox id="{{item.name}}" value="{{item.score}} " checked="{{item.checked}}" />
                 <label for="{{item.name}}">
-                  <text>{{item.name}}</text>
+                  <text class="item_text">{{item.name}}</text>
                 </label>
               </view>
             </view>

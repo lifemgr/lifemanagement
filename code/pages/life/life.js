@@ -7,7 +7,8 @@ Page({
     co_scoring: 0,
     op_scoring: 0,
     ch_scoring: 0,
-    show: !0
+    show: !0,
+    hiddenCanvas: !0
   },
   onLoad: function(options) {
     var t = this;
@@ -128,7 +129,7 @@ Page({
 
     ctx.fillText('MINA', 100, 100);
     // ctx.fillText(this.data.nickName, 100, 100)
-    ctx.setTransform(0.5, 0.5, 1, 1, 1, 1);
+    //ctx.setTransform(0.5, 0.5, 1, 1, 1, 1);
     var h = this;
     ctx.draw(!0, function(a) {
       console.log("beginTo draw canvas");

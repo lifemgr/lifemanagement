@@ -12,7 +12,7 @@
 
 .submit-btn {
   width: 40px;
-  margin-right: 20px;
+  margin-right: 5px;
   color: #fff;
 }
 
@@ -43,8 +43,8 @@
 .right-footer button {
     min-width: 60px;
     padding: 0px;
-    height: 45px;
-    line-height: 45px;
+    height: 30px;
+    line-height: 30px;
 }
 .btn-img {
     width: 40px;
@@ -56,4 +56,12 @@
 } 
 .hidden-view {
     display: none;
+}
+
+.main-container{
+  margin-bottom: 40px
+}
+
+.item_text{
+  font-size: 14px;
 }

@@ -7,7 +7,33 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text  bindtap="cavs" class="user-motto">{{motto}}</text>
-  </view>
 </view>
+
+<view bindtap="cavs" class="usermotto">
+    <text  class="user-motto">{{motto}}</text>
+</view>
+
+<!--下拉框-->
+
+<view class="PropertyTitleA">人生属性：</view>
+<view class="sectionA">
+  <picker bindchange="bindPickerChangeA" value="{{indexA}}" range="{{arrayA}}">
+    <view class="pickerA">
+      {{arrayA[indexA]}}
+    </view>
+  </picker>
+</view>
+
+
+<view class="PropertyTitleB">我的星座：</view>
+<view class="sectionB">
+  <picker bindchange="bindPickerChangeB"value="{{indexB}}" range="{{arrayB}}">
+    <view class="pickerB">
+      {{arrayB[indexB]}}
+    </view>
+  </picker>
+</view>
+
+
+<!--下拉框-->
+
