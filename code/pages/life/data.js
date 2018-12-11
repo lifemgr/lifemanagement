@@ -1,326 +1,596 @@
 module.exports = {
   student: function() {
     return {
-      "totalscore": 100,
+      "totalscore": 134,
       "course": {
         "compulsory": {
-          score: 50,
+          score: 19,
           course: [{
             id: 101,
             score: 3,
             name: "表白",
-            image: '../../imgs/profession.jpg'
+            image: '../../imgs/1/1_1/1_1_1_3.jpg'
           }, {
             id: 102,
             score: 1,
             name: "不挂科",
-            image: '../../imgs/failcourse.jpg'
+            image: '../../imgs/1/1_1/1_1_2_1.jpg'
           }, {
             id: 103,
             score: 1,
             name: "参加社团",
-            image: '../../imgs/community.jpg'
+            image: '../../imgs/1/1_1/1_1_3_1.jpg'
           }, {
             id: 104,
             score: 1,
             name: "参加运动会",
-            image: '../../imgs/sportsmeeting.jpg'
+            image: '../../imgs/1/1_1/1_1_4_1.jpg'
           }, {
             id: 105,
             score: 2,
             name: "过六级",
-            image: '../../imgs/sixlevel.jpg'
+            image: '../../imgs/1/1_1/1_1_5_2.jpg'
           }, {
             id: 106,
             score: 1,
             name: "喝酒撸串",
-            image: '../../imgs/drink.jpg'
+            image: '../../imgs/1/1_1/1_1_6_1.jpg'
+          }, {
+            id: 107,
+            score: 1,
+            name: "游戏开黑",
+            image: '../../imgs/1/1_1/1_1_7_1.jpg'
+          }, {
+            id: 108,
+            score: 2,
+            name: "拿奖学金",
+            image: '../../imgs/1/1_1/1_1_8_2.jpg'
+          }, {
+            id: 109,
+            score: 1,
+            name: "谈恋爱",
+            image: '../../imgs/1/1_1/1_1_9_1.jpg'
+          }, {
+            id: 110,
+            score: 2,
+            name: "通宵学习",
+            image: '../../imgs/1/1_1/1_1_10_2.jpg'
+          }, {
+            id: 111,
+            score: 1,
+            name: "图书馆学习",
+            image: '../../imgs/1/1_1/1_1_11_1.jpg'
+          }, {
+            id: 112,
+            score: 3,
+            name: "培养爱好",
+            image: '../../imgs/1/1_1/1_1_12_3.jpg'
           }]
         },
         "optional": {
-          score: 50,
+          score: 36,
           course: [{
             id: 201,
             score: 3,
             name: "DIY蛋糕",
-            image: '../../imgs/DIYcake.jpg'
+            image: '../../imgs/1/1_2/1_2_1_3.jpg'
           }, {
             id: 202,
             score: 2,
             name: "帮助弱者",
-            image: '../../imgs/helpweaker.jpg'
+            image: '../../imgs/1/1_2/1_2_2_2.jpg'
           }, {
             id: 203,
             score: 5,
             name: "出国留学",
-            image: '../../imgs/studyabroad.jpg'
+            image: '../../imgs/1/1_2/1_2_3_5.jpg'
           }, {
             id: 204,
             score: 1,
             name: "堆雪人",
-            image: '../../imgs/makesnowman.jpg'
+            image: '../../imgs/1/1_2/1_2_4_1.jpg'
           }, {
             id: 205,
             score: 3,
             name: "辅修专业",
-            image: '../../imgs/minor.jpg'
+            image: '../../imgs/1/1_2/1_2_5_3.jpg'
           }, {
             id: 206,
             score: 3,
             name: "公共演讲",
-            image: '../../imgs/publictalk.jpg'
+            image: '../../imgs/1/1_2/1_2_6_3.jpg'
+          }, {
+            id: 207,
+            score: 2,
+            name: "滑雪",
+            image: '../../imgs/0/0_3_7.jpg'
+          }, {
+            id: 208,
+            score: 2,
+            name: "溜冰",
+            image: '../../imgs/1/1_2/1_2_8_2.jpg'
+          }, {
+            id: 209,
+            score: 4,
+            name: "马拉松",
+            image: '../../imgs/0/0_3_15.jpg'
+          }, {
+            id: 210,
+            score: 4,
+            name: "攀岩",
+            image: '../../imgs/0/0_3_8.jpg'
+          }, {
+            id: 211,
+            score: 5,
+            name: "西藏骑行",
+            image: '../../imgs/0/0_3_9.jpg'
+          }, {
+            id: 212,
+            score: 2,
+            name: "无偿献血",
+            image: '../../imgs/0/0_3_10.jpg'
           }]
         },
         "challenge": {
-          score: 50,
+          score: 79,
           course: [{
             id: 301,
             score: 8,
             name: "蹦极",
-            image: '../../imgs/Bungeejumping.jpg'
+            image: '../../imgs/0/0_3_1.jpg'
           }, {
             id: 302,
             score: 8,
             name: "参加快闪",
-              image: '../../imgs/flash.jpg'
+            image: '../../imgs/1/1_3/1_3_2_8.jpg'
           }, {
             id: 303,
             score: 6,
             name: "吃遍食堂菜系",
-              image: '../../imgs/Eatallcanteen.jpg'
+            image: '../../imgs/1/1_3/1_3_3_6.jpg'
           }, {
             id: 304,
             score: 8,
             name: "有作品",
-              image: '../../imgs/excellencework.jpg'
+            image: '../../imgs/0/0_3_2.jpg'
           }, {
             id: 305,
             score: 8,
             name: "冬泳",
-              image: '../../imgs/winterswimming.jpg'
+            image: '../../imgs/0/0_3_11.jpg'
           }, {
             id: 306,
             score: 6,
             name: "戒烟",
-              image: '../../imgs/quitsmoking.jpg'
+            image: '../../imgs/1/1_3/1_3_6_6.jpg'
+          }, {
+            id: 307,
+            score: 6,
+            name: "潜水",
+            image: '../../imgs/0/0_3_3.jpg'
+          }, {
+            id: 308,
+            score: 8,
+            name: "冰岛温泉",
+            image: '../../imgs/0/0_3_4.jpg'
+          }, {
+            id: 309,
+            score: 5,
+            name: "玻璃栈道",
+            image: '../../imgs/1/1_3/1_3_9_5.jpg'
+          }, {
+            id: 310,
+            score: 5,
+            name: "野外求生",
+            image: '../../imgs/0/0_3_5.jpg'
+          }, {
+            id: 311,
+            score: 6,
+            name: "跳伞",
+            image: '../../imgs/0/0_3_6.jpg'
+          }, {
+            id: 312,
+            score: 5,
+            name: "Cosplay",
+            image: '../../imgs/1/1_3/1_3_12_5.jpg'
           }]
         }
       }
     }
   },
-  newcomer: function () {
+  newcomer: function() {
     return {
-      "totalscore": 100,
+      "totalscore": 168,
       "course": {
         "compulsory": {
-          score: 50,
+          score: 21,
           course: [{
             id: 101,
-            score: 3,
-            name: "表白",
-            image: '../../imgs/profession.jpg'
+            score: 1,
+            name: "不抱怨",
+            image: '../../imgs/2/2_1/2_1_1_1.jpg'
           }, {
             id: 102,
             score: 1,
-            name: "不挂科",
-            image: '../../imgs/failcourse.jpg'
+            name: "不迟到",
+            image: '../../imgs/2/2_1/2_1_2_1.jpg'
           }, {
             id: 103,
             score: 1,
-            name: "参加社团",
-            image: '../../imgs/community.jpg'
+            name: "挤公交",
+            image: '../../imgs/2/2_1/2_1_3_1.jpg'
           }, {
             id: 104,
-            score: 1,
-            name: "参加运动会",
-            image: '../../imgs/sportsmeeting.jpg'
-          }, {
-            id: 105,
             score: 2,
-            name: "过六级",
-            image: '../../imgs/sixlevel.jpg'
-          }, {
-            id: 106,
-            score: 1,
-            name: "喝酒撸串",
-            image: '../../imgs/drink.jpg'
-          }]
-        },
-        "optional": {
-          score: 50,
-          course: [{
-            id: 201,
-            score: 3,
-            name: "DIY蛋糕",
-            image: '../../imgs/DIYcake.jpg'
-          }, {
-            id: 202,
-            score: 2,
-            name: "帮助弱者",
-            image: '../../imgs/helpweaker.jpg'
-          }, {
-            id: 203,
-            score: 5,
-            name: "出国留学",
-            image: '../../imgs/studyabroad.jpg'
-          }, {
-            id: 204,
-            score: 1,
-            name: "堆雪人",
-            image: '../../imgs/makesnowman.jpg'
-          }, {
-            id: 205,
-            score: 3,
-            name: "辅修专业",
-            image: '../../imgs/minor.jpg'
-          }, {
-            id: 206,
-            score: 3,
-            name: "公共演讲",
-            image: '../../imgs/publictalk.jpg'
-          }]
-        },
-        "challenge": {
-          score: 50,
-          course: [{
-            id: 301,
-            score: 8,
-            name: "蹦极",
-            image: '../../imgs/Bungeejumping.jpg'
-          }, {
-            id: 302,
-            score: 8,
-            name: "参加快闪",
-            image: '../../imgs/flash.jpg'
-          }, {
-            id: 303,
-            score: 6,
-            name: "吃遍食堂菜系",
-            image: '../../imgs/Eatallcanteen.jpg'
-          }, {
-            id: 304,
-            score: 8,
-            name: "有作品",
-            image: '../../imgs/excellencework.jpg'
-          }, {
-            id: 305,
-            score: 8,
-            name: "冬泳",
-            image: '../../imgs/winterswimming.jpg'
-          }, {
-            id: 306,
-            score: 6,
-            name: "戒烟",
-            image: '../../imgs/quitsmoking.jpg'
-          }]
-        }
-      }
-    }
-  },
-  veterans: function () {
-    return {
-      "totalscore": 100,
-      "course": {
-        "compulsory": {
-          score: 50,
-          course: [{
-            id: 3101,
-            score: 1,
             name: "坚持锻炼",
-            image: '../../imgs/profession.jpg'
+            image: '../../imgs/2/2_1/2_1_4_2.jpg'
           }, {
-            id: 3102,
-            score: 2,
-            name: "不焦虑",
-            image: '../../imgs/failcourse.jpg'
-          }, {
-            id: 3103,
-            score: 2,
-            name: "定期旅行",
-            image: '../../imgs/community.jpg'
-          }, {
-            id: 3104,
-            score: 2,
-            name: "广交好友",
-            image: '../../imgs/sportsmeeting.jpg'
-          }, {
-            id: 3105,
+            id: 105,
             score: 3,
             name: "坚持阅读",
-            image: '../../imgs/sixlevel.jpg'
+            image: '../../imgs/2/2_1/2_1_5_3.jpg'
           }, {
-            id: 3106,
+            id: 106,
             score: 3,
             name: "结婚",
-            image: '../../imgs/drink.jpg'
+            image: '../../imgs/2/2_1/2_1_6_3.jpg'
+          }, {
+            id: 107,
+            score: 2,
+            name: "谈恋爱",
+            image: '../../imgs/2/2_1/2_1_7_2.jpg'
+          }, {
+            id: 108,
+            score: 2,
+            name: "投资理财",
+            image: '../../imgs/2/2_1/2_1_8_2.jpg'
+          }, {
+            id: 109,
+            score: 1,
+            name: "请教问题",
+            image: '../../imgs/2/2_1/2_1_9_1.jpg'
+          }, {
+            id: 110,
+            score: 1,
+            name: "孝敬父母",
+            image: '../../imgs/2/2_1/2_1_10_1.jpg'
+          }, {
+            id: 111,
+            score: 2,
+            name: "学会化妆",
+            image: '../../imgs/2/2_1/2_1_11_2.jpg'
+          }, {
+            id: 112,
+            score: 2,
+            name: "学会驾驶",
+            image: '../../imgs/2/2_1/2_1_12_2.jpg'
           }]
         },
         "optional": {
-          score: 50,
+          score: 58,
+          course: [{
+            id: 201,
+            score: 6,
+            name: "创业",
+            image: '../../imgs/2/2_2/2_2_1_6.jpg'
+          }, {
+            id: 202,
+            score: 4,
+            name: "钓鱼",
+            image: '../../imgs/2/2_2/2_2_2_4.jpg'
+          }, {
+            id: 203,
+            score: 4,
+            name: "滑雪",
+            image: '../../imgs/0/0_3_7.jpg'
+          }, {
+            id: 204,
+            score: 6,
+            name: "看极光",
+            image: '../../imgs/2/2_2/2_2_4_6.jpg'
+          }, {
+            id: 205,
+            score: 4,
+            name: "领养宠物",
+            image: '../../imgs/2/2_2/2_2_5_4.jpg'
+          }, {
+            id: 206,
+            score: 4,
+            name: "溜冰",
+            image: '../../imgs/2/2_2/2_2_6_4.jpg'
+          }, {
+            id: 207,
+            score: 5,
+            name: "拍写真",
+            image: '../../imgs/0/0_3_16.jpg'
+          }, {
+            id: 208,
+            score: 4,
+            name: "攀岩",
+            image: '../../imgs/0/0_3_8.jpg'
+          }, {
+            id: 209,
+            score: 6,
+            name: "西藏骑行",
+            image: '../../imgs/0/0_3_9.jpg'
+          }, {
+            id: 210,
+            score: 5,
+            name: "无偿献血",
+            image: '../../imgs/0/0_3_10.jpg'
+          }, {
+            id: 211,
+            score: 4,
+            name: "牛奶浴",
+            image: '../../imgs/2/2_2/2_2_11_4.jpg'
+          }, {
+            id: 212,
+            score: 6,
+            name: "会多种语言",
+            image: '../../imgs/2/2_2/2_2_12_6.jpg'
+          }]
+        },
+        "challenge": {
+          score: 89,
+          course: [{
+            id: 301,
+            score: 7,
+            name: "蹦极",
+            image: '../../imgs/0/0_3_1.jpg'
+          }, {
+            id: 302,
+            score: 6,
+            name: "烛光晚餐",
+            image: '../../imgs/0/0_3_7.jpg'
+          }, {
+            id: 303,
+            score: 8,
+            name: "创作作品",
+            image: '../../imgs/0/0_3_2.jpg'
+          }, {
+            id: 304,
+            score: 8,
+            name: "戒酒",
+            image: '../../imgs/2/2_3/2_3_4_8.jpg'
+          }, {
+            id: 305,
+            score: 9,
+            name: "登珠峰",
+            image: '../../imgs/2/2_3/2_3_5_9.jpg'
+          }, {
+            id: 306,
+            score: 7,
+            name: "潜水",
+            image: '../../imgs/0/0_3_3.jpg'
+          }, {
+            id: 307,
+            score: 8,
+            name: "冰岛温泉",
+            image: '../../imgs/2/2_3/2_3_7_8.jpg'
+          }, {
+            id: 308,
+            score: 8,
+            name: "看维密秀",
+            image: '../../imgs/0/0_3_4.jpg'
+          }, {
+            id: 309,
+            score: 7,
+            name: "野外求生",
+            image: '../../imgs/0/0_3_5.jpg'
+          }, {
+            id: 310,
+            score: 7,
+            name: "跳伞",
+            image: '../../imgs/0/0_3_6.jpg'
+          }, {
+            id: 311,
+            score: 7,
+            name: "徒步沙漠",
+            image: '../../imgs/2/2_3/2_3_11_7.jpg'
+          }, {
+            id: 312,
+            score: 7,
+            name: "玩滑翔伞",
+            image: '../../imgs/0/0_3_13.jpg'
+          }]
+        }
+      }
+    }
+  },
+  veterans: function() {
+    return {
+      "totalscore": 171,
+      "course": {
+        "compulsory": {
+          score: 24,
+          course: [{
+            id: 101,
+            score: 1,
+            name: "坚持锻炼",
+            image: '../../imgs/3/3_1/3_1_1_1.jpg'
+          }, {
+            id: 102,
+            score: 2,
+            name: "不焦虑",
+            image: '../../imgs/3/3_1/3_1_2_2.jpg'
+          }, {
+            id: 103,
+            score: 2,
+            name: "定期旅行",
+            image: '../../imgs/3/3_1/3_1_3_2.jpg'
+          }, {
+            id: 104,
+            score: 2,
+            name: "广交好友",
+            image: '../../imgs/3/3_1/3_1_4_2.jpg'
+          }, {
+            id: 105,
+            score: 3,
+            name: "坚持阅读",
+            image: '../../imgs/3/3_1/3_1_5_3.jpg'
+          }, {
+            id: 106,
+            score: 3,
+            name: "结婚",
+            image: '../../imgs/3/3_1/3_1_6_3.jpg'
+          }, {
+            id: 107,
+            score: 2,
+            name: "目标明确",
+            image: '../../imgs/3/3_1/3_1_7_2.jpg'
+          }, {
+            id: 108,
+            score: 2,
+            name: "辅导孩子",
+            image: '../../imgs/3/3_1/3_1_8_2.jpg'
+          }, {
+            id: 109,
+            score: 3,
+            name: "生孩子",
+            image: '../../imgs/3/3_1/3_1_9_3.jpg'
+          }, {
+            id: 110,
+            score: 2,
+            name: "侍奉父母",
+            image: '../../imgs/3/3_1/3_1_10_2.jpg'
+          }, {
+            id: 111,
+            score: 1,
+            name: "学会感恩",
+            image: '../../imgs/3/3_1/3_1_11_1.jpg'
+          }, {
+            id: 112,
+            score: 1,
+            name: "拥有爱好",
+            image: '../../imgs/3/3_1/3_1_12_1.jpg'
+          }]
+        },
+        "optional": {
+          score: 53,
           course: [{
             id: 201,
             score: 3,
-            name: "DIY蛋糕",
-            image: '../../imgs/DIYcake.jpg'
+            name: "无偿献血",
+            image: '../../imgs/0/0_3_10.jpg'
           }, {
             id: 202,
             score: 2,
             name: "帮助弱者",
-            image: '../../imgs/helpweaker.jpg'
+            image: '../../imgs/3/3_2/3_2_2_2.jpg'
           }, {
             id: 203,
             score: 5,
-            name: "出国留学",
-            image: '../../imgs/studyabroad.jpg'
+            name: "创业",
+            image: '../../imgs/3/3_2/3_2_3_5.jpg'
           }, {
             id: 204,
-            score: 1,
-            name: "堆雪人",
-            image: '../../imgs/makesnowman.jpg'
+            score: 6,
+            name: "改行",
+            image: '../../imgs/3/3_2/3_2_4_6.jpg'
           }, {
             id: 205,
-            score: 3,
-            name: "辅修专业",
-            image: '../../imgs/minor.jpg'
+            score: 4,
+            name: "异国跨年",
+            image: '../../imgs/3/3_2/3_2_5_4.jpg'
           }, {
             id: 206,
+            score: 4,
+            name: "滑雪",
+            image: '../../imgs/0/0_3_7.jpg'
+          }, {
+            id: 207,
+            score: 5,
+            name: "看流星雨",
+            image: '../../imgs/3/3_2/3_2_7_5.jpg'
+          }, {
+            id: 208,
             score: 3,
-            name: "公共演讲",
-            image: '../../imgs/publictalk.jpg'
+            name: "领养宠物",
+            image: '../../imgs/3/3_2/3_2_8_3.jpg'
+          }, {
+            id: 209,
+            score: 5,
+            name: "马拉松",
+            image: '../../imgs/0/0_3_15.jpg'
+          }, {
+            id: 210,
+            score: 5,
+            name: "拍写真",
+            image: '../../imgs/0/0_3_16.jpg'
+          }, {
+            id: 211,
+            score: 5,
+            name: "攀岩",
+            image: '../../imgs/0/0_3_8.jpg'
+          }, {
+            id: 212,
+            score: 6,
+            name: "西藏骑行",
+            image: '../../imgs/0/0_3_9.jpg'
           }]
         },
         "challenge": {
-          score: 50,
+          score: 94,
           course: [{
             id: 301,
-            score: 8,
+            score: 7,
             name: "蹦极",
-            image: '../../imgs/Bungeejumping.jpg'
+            image: '../../imgs/0/0_3_1.jpg'
           }, {
             id: 302,
             score: 8,
-            name: "参加快闪",
-            image: '../../imgs/flash.jpg'
+            name: "创作作品",
+            image: '../../imgs/0/0_3_2.jpg'
           }, {
             id: 303,
-            score: 6,
-            name: "吃遍食堂菜系",
-            image: '../../imgs/Eatallcanteen.jpg'
+            score: 8,
+            name: "打猎",
+            image: '../../imgs/3/3_3/3_3_3_8.jpg'
           }, {
             id: 304,
-            score: 8,
-            name: "有作品",
-            image: '../../imgs/excellencework.jpg'
+            score: 9,
+            name: "冬泳",
+            image: '../../imgs/0/0_3_11.jpg'
           }, {
             id: 305,
             score: 8,
-            name: "冬泳",
-            image: '../../imgs/winterswimming.jpg'
+            name: "国外置产",
+            image: '../../imgs/3/3_3/3_3_5_8.jpg'
           }, {
             id: 306,
-            score: 6,
+            score: 9,
+            name: "环球旅行",
+            image: '../../imgs/3/3_3/3_3_6_9.jpg'
+          }, {
+            id: 307,
+            score: 7,
             name: "戒烟",
-            image: '../../imgs/quitsmoking.jpg'
+            image: '../../imgs/0/0_3_3.jpg'
+          }, {
+            id: 308,
+            score: 7,
+            name: "潜水",
+            image: '../../imgs/3/3_3/3_3_8_7.jpg'
+          }, {
+            id: 309,
+            score: 7,
+            name: "冰岛温泉",
+            image: '../../imgs/0/0_3_4.jpg'
+          }, {
+            id: 310,
+            score: 9,
+            name: "太空旅行",
+            image: '../../imgs/3/3_3/3_3_10_9.jpg'
+          }, {
+            id: 311,
+            score: 8,
+            name: "体验驾驶飞机",
+            image: '../../imgs/3/3_3/3_3_11_8.jpg'
+          }, {
+            id: 312,
+            score: 7,
+            name: "野外求生",
+            image: '../../imgs/0/0_3_5.jpg'
           }]
         }
       }

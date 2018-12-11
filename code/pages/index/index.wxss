@@ -20,6 +20,9 @@
   margin-top: 200px;
 }
 
+.btn-display{
+  display: none;
+}
 
 .sectionA{
   display: flex;
