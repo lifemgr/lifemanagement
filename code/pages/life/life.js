@@ -31,7 +31,9 @@ Page({
       optional: lifeprin.course.optional,
       challenge: lifeprin.course.challenge,
       nickName: options.nickName,
-      avatarUrl: options.avatarUrl
+      avatarUrl: options.avatarUrl,
+      constellationData: all_data.constellation().comment[constellation],
+      commentData: all_data.comments().comment
     });
 
     wx.getSystemInfo({
@@ -79,7 +81,7 @@ Page({
     console.log("op_scoring : " + this.data.op_scoring);
     console.log("ch_scoring : " + this.data.ch_scoring);
     var scoreRate = (this.data.co_scoring + this.data.op_scoring + this.data.ch_scoring) * 1.0 / this.data.score;
-    var totalCount = this.data.co_size + this.data.op_size + this.data.ch_size; 
+    var totalCount = this.data.co_size + this.data.op_size + this.data.ch_size;
     console.log("scoreRate:" + scoreRate);
     console.log("totalCount:" + totalCount);
     this.drawShareImg(scoreRate, 2, 3, 3, totalCount);
@@ -90,9 +92,9 @@ Page({
       hiddenCanvas: !1
     }), wx.showLoading({
       title: "图片生成中..."
-      }), this._drawShareImg(scoreRate, coScoreRate, opScoreRate, chScoreRate, totalCount);
+    }), this._drawShareImg(scoreRate, coScoreRate, opScoreRate, chScoreRate, totalCount);
   },
-  _drawShareImg: function (scoreRate, coScoreRate, opScoreRate, chScoreRate, totalCount) {
+  _drawShareImg: function(scoreRate, coScoreRate, opScoreRate, chScoreRate, totalCount) {
     console.log("_drawShareImg");
     this.setData({
       hiddenCanvas: !1
@@ -112,24 +114,32 @@ Page({
     //根据用户得分绘制称号
     ctx.save();
 
+    var commentData = 0;
+    var cData = this.data.constellationData;
     if (scoreRate >= 0.9) {
       //王者
       ctx.drawImage("../../imgs/1.RSWZ.png", 268, 124);
+      commentData = this.data.commentData[5];
     } else if (scoreRate >= 0.75) {
       //钻石
       ctx.drawImage("../../imgs/2.ZSWJ.png", 268, 124);
+      commentData = this.data.commentData[4];
     } else if (scoreRate >= 0.5) {
       //铂金
       ctx.drawImage("../../imgs/3.BJWJ.png", 268, 124);
+      commentData = this.data.commentData[3];
     } else if (scoreRate >= 0.2) {
       //黄金
       ctx.drawImage("../../imgs/4.HJWJ.png", 268, 124);
+      commentData = this.data.commentData[2];
     } else if (scoreRate >= 0.1) {
       //白银
       ctx.drawImage("../../imgs/5.BYWJ.png", 268, 124);
+      commentData = this.data.commentData[1];
     } else {
       //青铜
       ctx.drawImage("../../imgs/6.QTWJ.png", 268, 124);
+      commentData = this.data.commentData[0];
     }
     ctx.restore();
     //------------
@@ -137,36 +147,34 @@ Page({
 
 
     ctx.setFontSize(52);
+    ctx.setFillStyle('yellow');
     ctx.fillText(totalCount, 398, 235);
 
     ctx.setFontSize(28);
-    ctx.setFillStyle('blue');
-    ctx.fillText('好胜独立孩子气', 80, 315);
-    ctx.fillText('天生要强', 80, 360);
+    ctx.setFillStyle('yellow');
+    ctx.fillText(cData[0], 80, 315);
+    ctx.fillText(cData[1], 80, 360);
 
-    ctx.fillText('易燃易爆炸', 115, 444);
-    ctx.fillText('聪明机灵鬼', 115, 490);
+    ctx.fillText(cData[2], 115, 444);
+    ctx.fillText(cData[3], 115, 490);
 
-    ctx.fillText('耿直善良', 57, 577);
-    ctx.fillText('学不会讨好', 57, 625);
+    ctx.fillText(cData[4], 57, 577);
+    ctx.fillText(cData[5], 57, 625);
 
-    ctx.fillText('单纯没心机', 61, 707);
-    ctx.fillText('不屑玩套路', 61, 750);
+    ctx.fillText(cData[6], 61, 707);
+    ctx.fillText(cData[7], 61, 750);
 
+    ctx.fillText(commentData[0], 430, 428);
+    ctx.fillText(commentData[1], 430, 478);
 
+    ctx.fillText(commentData[2], 408, 543);
+    ctx.fillText(commentData[3], 405, 587);
 
+    ctx.fillText(commentData[4], 396, 677);
+    ctx.fillText(commentData[5], 396, 720);
 
-    ctx.fillText('思想的巨人', 430, 428);
-    ctx.fillText('行动的矮子', 430, 478);
-
-    ctx.fillText('想的太多', 408, 543);
-    ctx.fillText('做的太少', 405, 587);
-
-    ctx.fillText('花间一壶酒', 396, 677);
-    ctx.fillText('是条萌宅狗', 396, 720);
-
-    ctx.fillText('书中自有黄金屋', 349, 808);
-    ctx.fillText('深宅学霸门不出', 349, 850);
+    ctx.fillText(commentData[6], 349, 808);
+    ctx.fillText(commentData[7], 349, 850);
 
     ctx.restore();
 

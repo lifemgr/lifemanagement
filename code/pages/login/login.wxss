@@ -1,0 +1,38 @@
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #b3d4db;  
+}  
+.header {
+    margin: 45rpx 0 45rpx 50rpx;
+    border-bottom: 1px solid rgb(14, 13, 13);
+    text-align: center;
+    width: 650rpx;
+    height: 500rpx;
+    line-height: 200rpx;
+}
+ 
+.header image {
+    
+    width: 600rpx;
+    height: 450rpx;
+}
+ 
+.content {
+    
+    margin-left: 50rpx;
+    margin-bottom: 10rpx;
+    font-family: 幼圆;
+}
+ 
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+ 
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+}
